@@ -14,7 +14,7 @@
  * The execution time of SQLite query above your time threshold 
  * will print out the sql and the execution time.
  *
- * The default timeThreshold is 10ms.
+ * The default timeThreshold is 100ms.
  */
 + (void)setSqlTimeThreshold:(CFTimeInterval)timeThreshold;
 

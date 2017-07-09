@@ -14,7 +14,7 @@
 static NSString *const kSqliteKeyPrepareStartTime = @"kSqliteKeyPrepareStartTime";
 static NSString *const kSqliteKeyPrepareSql = @"kSqliteKeyPrepareSql";
 
-static CFTimeInterval sqlTimeThreshold = 10; //ms
+static CFTimeInterval sqlTimeThreshold = 100; //ms
 static NSCache *sqlCache;
 
 SQLITE_API int SQLITE_STDCALL (*original_sqlite3_prepare_v2)(sqlite3 *db,
